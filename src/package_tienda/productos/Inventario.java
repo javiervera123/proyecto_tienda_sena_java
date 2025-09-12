@@ -1,5 +1,6 @@
 package package_tienda.productos;
-import java.util.List;
+import java.util.ArrayList;
+import java.util.List; // libreria para las listas
 
 public class Inventario {
     private int idInventario;
@@ -8,11 +9,11 @@ public class Inventario {
     private double valorTotal;
     private List<Producto> productos;
 
-    public Inventario(int idInventario, String fecha, String descripcion, List<Producto> productos) {
+    public Inventario(int idInventario, String fecha, String descripcion) {
         this.idInventario = idInventario;
         this.fecha = fecha;
         this.descripcion = descripcion;
-        this.productos = productos;
+        this.productos = new ArrayList<>(); // empieza vacío
         generarReporteInventario();
     }
 
