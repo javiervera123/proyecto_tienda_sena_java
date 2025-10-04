@@ -32,4 +32,7 @@ public class Administrador extends Usuario {
     public void verReporteVentas(){
         System.out.println("Reporte de ventas...");
     }
+    // Getters y Setters
+    public Credencial getCredencial() { return credencial; }
+    public void setCredencial(Credencial credencial) { this.credencial = credencial; }
 }
